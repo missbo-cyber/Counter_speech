@@ -92,6 +92,7 @@ ds = load_dataset("LanD-FBK/ML_MTCONAN_KN")
 
 ds
 
+"""This part was used to choose specific language from the dataset"""
 ds_filtered = DatasetDict({
     "train": ds["train"].filter(lambda x: x["LANG"] == "ES"),
     "validation": ds["validation"].filter(lambda x: x["LANG"] == "ES")
