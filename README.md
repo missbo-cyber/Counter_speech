@@ -18,12 +18,9 @@ The project investigates how **large language models fine-tuned with parameter-e
 
 ## Repository Structure
 
-- **Main training and evaluation notebook**: Zero_shot_plus_metrics.ipynb 
-
-- **Dataset exploration and statistics**: data_eda.ipynb 
-
-- **Dataset download utility**: download_data.py 
-
+- **Main training and evaluation notebook**: Counterspeech.py
+- **Knowledge selection**: kwnoledge_selection_gpt4o.py
+-  **Dataset used for knowledge selection part**: train_selected.csv, validation_selected.csv
 - **Project documentation**: README.md 
 
 
