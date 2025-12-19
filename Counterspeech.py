@@ -165,9 +165,9 @@ data_collator = DataCollatorWithPadding(tokenizer)
 from transformers import Trainer, TrainingArguments, EarlyStoppingCallback
 
 training_args = TrainingArguments(
-    output_dir="./model_lora_1600",
-    per_device_train_batch_size=2,
-    per_device_eval_batch_size=2,
+    output_dir="./model_lora_400",
+    per_device_train_batch_size=1,
+    per_device_eval_batch_size=1,
     gradient_accumulation_steps=8,
     num_train_epochs=8,
     learning_rate=1e-4,
@@ -175,7 +175,7 @@ training_args = TrainingArguments(
     warmup_ratio=0.05,
     lr_scheduler_type="cosine",
 
-    logging_steps=20,
+    logging_steps=10,
     save_strategy="epoch",
     eval_strategy="epoch",
     load_best_model_at_end=True,
